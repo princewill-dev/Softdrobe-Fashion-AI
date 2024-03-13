@@ -9,7 +9,7 @@ def test_view(request):
     return JsonResponse({'message': 'Hello, world!'})
 
 
-client = anthropic.Anthropic(api_key="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")
+client = anthropic.Anthropic(api_key="your key here")
 
 @csrf_exempt
 def ask_view(request):
