@@ -1,3 +1,4 @@
+import os
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -9,10 +10,12 @@ def test_view(request):
     return JsonResponse({'message': 'Hello, world!'})
 
 
-client = anthropic.Anthropic(api_key="your key here")
-
 @csrf_exempt
 def ask_view(request):
+
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    client = anthropic.Anthropic(api_key=api_key)
+
     if request.method == 'POST':
         data = json.loads(request.body)
         phrase = data.get('phrase')
