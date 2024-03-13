@@ -24,7 +24,7 @@ def ask_view(request):
                 model="claude-3-opus-20240229",
                 max_tokens=1000,
                 temperature=0.0,
-                # system="Respond only in Yoda-speak.",
+                system="Respond only in plain text, no line breaks or new lines.",
                 messages=[
                     {"role": "user", "content": phrase}
                 ]
