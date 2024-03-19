@@ -1,4 +1,4 @@
-#!/home/venus/projects/code-projects/django/openapi-001/env/bin/python3
+#!/home/venus/projects/code-projects/django/AI-Projects/claude-query/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
