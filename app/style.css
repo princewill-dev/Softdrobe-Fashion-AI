@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  main {
+    padding: 40px;
+  }
+  
+  .search-bar {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .text-box button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+
+  .text-box {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex; /* Allow button to go below */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  .text-box textarea {
+    flex: 1; /* Textarea takes up available space */
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    resize: vertical; /* Allow resizing vertically */
+  }

@@ -23,7 +23,7 @@ def ask_view(request):
             message = client.messages.create(
                 model="claude-3-opus-20240229",
                 max_tokens=1000,
-                temperature=0.0,
+                temperature=0.1,
                 system="Respond only in plain text, no line breaks or new lines.",
                 messages=[
                     {"role": "user", "content": phrase}
