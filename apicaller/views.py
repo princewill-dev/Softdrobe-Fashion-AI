@@ -24,7 +24,7 @@ def ask_view(request):
                 model="claude-3-opus-20240229",
                 max_tokens=1000,
                 temperature=0.1,
-                system="Respond only in plain text, no line breaks or new lines.",
+                system="encapsulate response in HTML, add paragraphs, line breaks, etc. where necessary.",
                 messages=[
                     {"role": "user", "content": phrase}
                 ]
