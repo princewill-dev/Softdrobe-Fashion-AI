@@ -57,7 +57,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV '/home/venus/projects/code-projects/django/AI-Projects/claude-query/env'
+set -gx VIRTUAL_ENV '/home/venus/projects/code-projects/django/AI-Projects/content-generator-backend/env'
 
 # https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
 if test (echo $FISH_VERSION | head -c 1) -lt 3

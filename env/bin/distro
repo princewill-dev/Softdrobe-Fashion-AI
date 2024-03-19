@@ -1,4 +1,4 @@
-#!/home/venus/projects/code-projects/django/AI-Projects/claude-query/env/bin/python
+#!/home/venus/projects/code-projects/django/AI-Projects/content-generator-backend/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
