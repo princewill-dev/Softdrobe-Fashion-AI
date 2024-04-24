@@ -23,9 +23,9 @@ def ask_view(request):
         if phrase:
 
             # Make the API call here and store the result
-            api_endpoint = "http://127.0.0.1:8000/api/v1/product/list/"  # Replace with your API endpoint
+            api_endpoint = "http://127.0.0.1:8000/api/v1/product/list/"
             api_response = requests.get(api_endpoint)
-            api_result = api_response.json()  # Assuming the API returns JSON
+            api_result = api_response.json()
 
             # Combine the phrase and the API result
             combined_content = f"product list: {api_result} \n\n{phrase}"
