@@ -6,6 +6,7 @@ import anthropic
 import json
 import requests
 
+
 # Create your views here.
 def test_view(request):
     return JsonResponse({'message': 'Hello, world!'})
